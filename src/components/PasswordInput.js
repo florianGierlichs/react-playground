@@ -3,17 +3,12 @@ import styled from "@emotion/styled";
 
 const Input = styled.input`
   background-color: hsl(
-    ${props => (props.value?.length <= 10 ? props.value?.length * 10 : 100)},
-    100%,
-    50%
-  );
-`;
-
-const Inputt = styled.input`
-  background-color: hsl(
-    ${props => (if(props.value?.length === 0) {
-
-    })},
+    ${props =>
+      props.value?.length <= 10
+        ? props.value?.length === 0
+          ? 200
+          : props.value?.length * 10
+        : 100},
     100%,
     50%
   );
