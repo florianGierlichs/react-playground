@@ -18,7 +18,7 @@ function App() {
         >
           Learn React
         </a>
-        <a href="/storybook/index.html">To Storybook</a>
+        <a href="/storybook/index.html">To Storybook!!</a>
       </header>
     </div>
   );
