@@ -27,3 +27,25 @@ export default function PasswordInput() {
     />
   );
 }
+
+// Leons Lösung:
+
+// function calculateHue(passwordLength) {
+//   return Math.min(passwordLength * 10, 100);
+// }
+
+// const PasswordInput = styled.input`
+//   border: 4px solid slateblue;
+//   font-size: 2em;
+//   padding-left: 4px;
+//   &:focus {
+//     background-color: ${props =>
+//       `hsl(${calculateHue(props.value.length)}, 100%, 50%)`};
+//   }
+// `;
+
+// PasswordInput.defaultProps = {
+//   type: "password"
+// };
+
+// export default PasswordInput;
